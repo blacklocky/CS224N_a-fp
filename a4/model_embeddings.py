@@ -38,6 +38,8 @@ class ModelEmbeddings(nn.Module):
         ### TODO - Initialize the following variables:
         ###     self.source (Embedding Layer for source language)
         ###     self.target (Embedding Layer for target langauge)
+        self.source = nn.Embedding(len(vocab.src),embed_size,src_pad_token_idx)
+        self.target = nn.Embedding(len(vocab.tgt),embed_size,tgt_pad_token_idx)
         ###
         ### Note:
         ###     1. `vocab` object contains two vocabularies:
