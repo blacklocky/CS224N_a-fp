@@ -4,3 +4,6 @@ recording learning of CS224N
 2.functions
 3.denpendency
 4.nmt
+5.pre_trained transformer
+
+FP:squad
